@@ -50,7 +50,6 @@ var getPage = function (url, callback) {
             var str = iconv.decode(buf, 'gb2312');
 
             callback(str);
-
         });
     }).on('error', function (e) {
         console.log(e.message);
